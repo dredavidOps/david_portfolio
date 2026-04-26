@@ -1,4 +1,5 @@
 import { Terminal, Download, Github, ExternalLink } from 'lucide-react'
+import { ENV } from '../config/env'
 
 export default function Hero() {
   return (
@@ -53,11 +54,11 @@ export default function Hero() {
             <Terminal size={16} />
             VIEW_RUNBOOKS
           </a>
-          <a href="/cv.pdf" className="px-5 py-2.5 panel border border-noc-border text-noc-textBright rounded font-mono text-sm hover:border-noc-text transition-all flex items-center gap-2">
+          <a href={ENV.CV_URL} className="px-5 py-2.5 panel border border-noc-border text-noc-textBright rounded font-mono text-sm hover:border-noc-text transition-all flex items-center gap-2">
             <Download size={16} />
             DOWNLOAD_CV.pdf
           </a>
-          <a href="https://github.com/dredavidOps" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 panel border border-noc-border text-noc-textBright rounded font-mono text-sm hover:border-noc-text transition-all flex items-center gap-2">
+          <a href={ENV.GITHUB_URL} target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 panel border border-noc-border text-noc-textBright rounded font-mono text-sm hover:border-noc-text transition-all flex items-center gap-2">
             <Github size={16} />
             OPEN_GITHUB
           </a>

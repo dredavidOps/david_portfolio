@@ -8,3 +8,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+// Expose ENV on window for debugging in development
+if (import.meta.env.DEV) {
+  import('./config/env').then((m) => {
+    window.ENV = m.ENV
+    console.log('[DEV] Environment variables loaded:', m.ENV)
+  })
+}
