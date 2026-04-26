@@ -9,7 +9,7 @@ const projects = [
     diagnostic: 'Django REST backend + React/Vite SPA frontend. Docker containerization. Render cloud hosting.',
     resolution: 'Full-stack deployment with CI/CD pipeline. Git-based version control and automated builds.',
     tags: ['Python', 'Django', 'React', 'Docker', 'Render'],
-    links: { live: '#', repo: '#' },
+    links: { live: 'https://www.career-leap.academy/', repo: '#' },
   },
   {
     id: 'tesla-api',
